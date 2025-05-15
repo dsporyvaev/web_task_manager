@@ -46,13 +46,13 @@
           {% for task in tasks %}
             <tbody>
               <tr>
-                <td scope="row">{{ task.id }}</td>
+                <td scope="row">{{ task.task_id }}</td>
                 <td>{{ task.content }}</td>
                 <td>{{task.date_created.date()}}</td>
                 <td>
-                  <a href="/delete/{{task.id}}">Delete</a>
+                  <a href="/delete/{{task.task_id}}">Delete</a>
                   <br>
-                  <a href="/update/{{task.id}}" >Update</a>
+                  <a href="/update/{{task.task_id}}" >Update</a>
                 </td>
                 {% if task.completed%}
                   <td>Yes</td>
